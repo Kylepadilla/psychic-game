@@ -1,7 +1,5 @@
 
 var LetterChoices = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-// var computerGuess = LetterChoices[Math.floor(Math.random() * LetterChoices.length)];
-
 
 var success = 0;
 var fail = 0;
@@ -23,12 +21,13 @@ if(LetterChoices.indexOf(userUpper)!== -1){
         success ++;
         attemptsleft = 10;
         userGuess = [];
-    } else {
+    } else{
        (userUpper != computerGuess);
     attemptsleft --;
     }
 
     if(attemptsleft === 0) {
+    alert("GAME OVER");
     fail ++;
     attemptsleft = 10;
     userGuess = [];
